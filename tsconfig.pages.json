@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "worker",
+    "db",
+    "examples",
+    "build",
+    "app/chatgpt-auth.ts",
+    "vite.config.ts",
+    "drizzle.config.ts"
+  ]
+}
