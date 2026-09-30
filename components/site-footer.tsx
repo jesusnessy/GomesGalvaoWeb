@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, MapPin } from "lucide-react";
 import { SiteBrand } from "@/components/site-brand";
-import { CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, whatsappUrl } from "@/lib/site";
+import { CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, OFFICE_ADDRESS, OFFICE_DIRECTIONS_URL, whatsappUrl } from "@/lib/site";
 
 export function SiteFooter() {
   return <>
@@ -28,6 +28,15 @@ export function SiteFooter() {
         <a href="/imposto-de-renda">Imposto de Renda</a>
         <a href="/#empresa">O escritório</a>
         <a href="/#contato">Contato</a>
+      </div>
+      <div className="container footer-location">
+        <address>
+          <span>{OFFICE_ADDRESS.streetAddress}</span>
+          <span>{OFFICE_ADDRESS.neighborhood} · {OFFICE_ADDRESS.addressLocality}/{OFFICE_ADDRESS.addressRegion} · CEP {OFFICE_ADDRESS.postalCode}</span>
+        </address>
+        <a href={OFFICE_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" aria-label="Como chegar à Gomes Galvão no Google Maps (abre em nova aba)">
+          <MapPin size={18} aria-hidden="true" />Como chegar<ArrowUpRight size={16} aria-hidden="true" />
+        </a>
       </div>
       <div className="container company-credentials">
         <span>Gomes Galvão Contabilidade LTDA · CNPJ 07.110.763/0001-34</span>
