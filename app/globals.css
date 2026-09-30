@@ -361,6 +361,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-links small { color: #a7a0a2; font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; }
 .company-location { display: flex; flex-direction: column; margin: 2px 0 0; padding-left: 36px; color: #e9e5e6; font-size: .88rem; }
 .company-location small { color: #a7a0a2; font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; }
+.company-address { display: flex; flex-direction: column; padding-left: 36px; color: #e9e5e6; font-size: .88rem; font-style: normal; overflow-wrap: anywhere; }
+.contact-links .office-directions { color: var(--gold-soft); font-weight: 700; }
 .business-hours { margin-top: 28px; color: var(--gold-soft); font-size: .88rem; }
 .contact-form { display: grid; gap: 19px; padding: 34px; background: var(--white); color: var(--ink); }
 .form-intro { margin: 0; color: var(--muted); font-size: .875rem; }
@@ -401,6 +403,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-navigation { display: flex; flex-wrap: wrap; gap: 12px 28px; padding-block: 0 22px; font-size: .9rem; }
 .footer-navigation a { display: inline-flex; align-items: center; min-height: 44px; }
 .footer-navigation a:hover { color: var(--gold-soft); }
+.footer-location { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; padding-bottom: 24px; color: #c8c2c3; font-size: .875rem; }
+.footer-location address { min-width: 0; font-style: normal; overflow-wrap: anywhere; }
+.footer-location address span { display: block; }
+.footer-location a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--gold-soft); font-weight: 700; }
+.footer-location a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.footer-location a svg { flex: 0 0 auto; }
 .social-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; max-width: 100%; }
 .social-links a { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--gold-soft); border-radius: 50%; background: var(--paper); transition: transform .3s cubic-bezier(.22, 1, .36, 1), border-color .25s ease, background-color .25s ease, box-shadow .3s ease; }
 .social-links > a { flex-shrink: 0; }

@@ -10,6 +10,7 @@ import {
   Building2,
   Check,
   FileCheck2,
+  MapPin,
   MessageCircle,
   Phone,
   ReceiptText,
@@ -24,7 +25,7 @@ import { ExperienceCounter } from "@/components/experience-counter";
 import { OfficeHeritage } from "@/components/office-heritage";
 import { TestimonialsCarousel } from "@/components/testimonials-carousel";
 import { services } from "@/content/services";
-import { CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, whatsappUrl } from "@/lib/site";
+import { CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, OFFICE_ADDRESS, OFFICE_DIRECTIONS_URL, whatsappUrl } from "@/lib/site";
 
 const audiences = [
   "MEI",
@@ -336,6 +337,15 @@ export default function Home() {
                   <img className="contact-brand-icon" src="/icons/instagram.svg" alt="" aria-hidden="true" width={22} height={22} /><span><small>Instagram</small>@{INSTAGRAM_HANDLE}</span>
                 </a>
                 <p className="company-location"><small>Atendimento</small>Online em todo o Brasil · sede em Curitiba/PR</p>
+                <address className="company-address">
+                  <small>Endereço</small>
+                  <span>{OFFICE_ADDRESS.streetAddress}</span>
+                  <span>{OFFICE_ADDRESS.neighborhood} · {OFFICE_ADDRESS.addressLocality}/{OFFICE_ADDRESS.addressRegion}</span>
+                  <span>CEP {OFFICE_ADDRESS.postalCode}</span>
+                </address>
+                <a className="office-directions" href={OFFICE_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" aria-label="Como chegar à Gomes Galvão no Google Maps (abre em nova aba)">
+                  <MapPin size={22} aria-hidden="true" /><span>Como chegar</span><ArrowUpRight size={16} aria-hidden="true" />
+                </a>
               </div>
               <p className="business-hours">Atendimento de segunda a sexta, das 9h às 18h.</p>
             </div>

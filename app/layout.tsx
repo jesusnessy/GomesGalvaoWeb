@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CONTACT_EMAIL, INSTAGRAM_URL, SEARCH_INDEXING_ENABLED, SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, INSTAGRAM_URL, OFFICE_ADDRESS, OFFICE_MAP_URL, SEARCH_INDEXING_ENABLED, SITE_URL } from "@/lib/site";
 import { services } from "@/content/services";
 import "./globals.css";
 
@@ -43,10 +43,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     openingHours: "Mo-Fr 09:00-18:00",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Curitiba",
-      addressRegion: "PR",
-      addressCountry: "BR",
+      streetAddress: `${OFFICE_ADDRESS.streetAddress} - ${OFFICE_ADDRESS.neighborhood}`,
+      addressLocality: OFFICE_ADDRESS.addressLocality,
+      addressRegion: OFFICE_ADDRESS.addressRegion,
+      postalCode: OFFICE_ADDRESS.postalCode,
+      addressCountry: OFFICE_ADDRESS.addressCountry,
     },
+    hasMap: OFFICE_MAP_URL,
     sameAs: [
       INSTAGRAM_URL,
       "https://contaazul.com/encontre-contador/contadores/gomes-galvao-contabilidade-ltda/",
