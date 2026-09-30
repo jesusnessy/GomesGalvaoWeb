@@ -5,6 +5,13 @@ export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_HANDLE}/`;
 // Client-confirmed production domain. The Worker keeps preview hosts noindex.
 export const SITE_URL = "https://gomesgalvaocontabilidade.com";
 export const SEARCH_INDEXING_ENABLED = true;
+// Link preview image (see app/og-image.png/route.tsx).
+export const SHARE_IMAGE = {
+  url: "/og-image.png",
+  width: 1200,
+  height: 630,
+  alt: "Gomes Galvão Contabilidade — atendimento online em todo o Brasil",
+};
 
 export const OFFICE_ADDRESS = {
   streetAddress: "Rua Napoleão Lopes, 80 · Apto 05, 2º andar",
