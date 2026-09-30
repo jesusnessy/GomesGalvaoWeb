@@ -39,7 +39,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     logo: `${SITE_URL}/brand/symbol-3d.webp`,
     image: `${SITE_URL}/images/escritorio.webp`,
     email: CONTACT_EMAIL,
-    telephone: "+55 41 2002-6651",
+    telephone: "+55 41 92002-6651",
     foundingDate: "2003",
     areaServed: { "@type": "Country", name: "Brasil" },
     openingHours: "Mo-Fr 09:00-18:00",
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+55 41 2002-6651",
+      telephone: "+55 41 92002-6651",
       contactType: "atendimento ao cliente",
       availableLanguage: "Portuguese",
     },
