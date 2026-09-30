@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight, ArrowUpRight, Check, FileCheck2, Files, MessageCircle, ShieldCheck } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { whatsappUrl } from "@/lib/site";
+import { SHARE_IMAGE, whatsappUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Imposto de Renda Pessoa Física online | Gomes Galvão Contabilidade",
@@ -15,9 +15,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "Gomes Galvão Contabilidade",
+    images: [SHARE_IMAGE],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
+    images: [SHARE_IMAGE.url],
     title: "Sua declaração sem dor de cabeça | Gomes Galvão",
     description: "Análise, revisão e acompanhamento do seu Imposto de Renda. Atendimento online em todo o Brasil.",
   },
