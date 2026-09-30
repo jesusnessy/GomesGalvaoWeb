@@ -14,7 +14,7 @@ export const SHARE_IMAGE = {
 };
 
 export const OFFICE_ADDRESS = {
-  streetAddress: "Rua Napoleão Lopes, 80 · Apto 05, 2º andar",
+  streetAddress: "Rua Napoleão Lopes, 80 · Apto 05, 3º andar",
   neighborhood: "São Francisco",
   addressLocality: "Curitiba",
   addressRegion: "PR",
