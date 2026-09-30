@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CONTACT_EMAIL, INSTAGRAM_URL, OFFICE_ADDRESS, OFFICE_MAP_URL, SEARCH_INDEXING_ENABLED, SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, INSTAGRAM_URL, OFFICE_ADDRESS, OFFICE_MAP_URL, SEARCH_INDEXING_ENABLED, SHARE_IMAGE, SITE_URL } from "@/lib/site";
 import { services } from "@/content/services";
 import "./globals.css";
 
@@ -11,9 +11,10 @@ export const metadata: Metadata = {
   icons: { icon: "/brand/symbol.svg", shortcut: "/brand/symbol.svg" },
   robots: { index: SEARCH_INDEXING_ENABLED, follow: true },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Gomes Galvão Contabilidade | Atendimento online",
     description: "Contabilidade próxima, responsável e online para clientes em todo o Brasil.",
+    images: [SHARE_IMAGE.url],
   },
   openGraph: {
     title: "Gomes Galvão Contabilidade | Atendimento online",
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "Gomes Galvão Contabilidade",
+    images: [SHARE_IMAGE],
   },
 };
 
