@@ -327,8 +327,8 @@ export default function Home() {
                 <a href={`mailto:${CONTACT_EMAIL}`}>
                   <img className="contact-brand-icon" src="/icons/gmail.svg" alt="" aria-hidden="true" width={150} height={150} /><span><small>E-mail</small>{CONTACT_EMAIL}</span>
                 </a>
-                <a href="tel:+554120026651">
-                  <Phone size={22} aria-hidden="true" /><span><small>Telefone</small>(41) 2002-6651</span>
+                <a href="tel:+5541920026651">
+                  <Phone size={22} aria-hidden="true" /><span><small>Telefone</small>(41) 9 2002-6651</span>
                 </a>
                 <a href={whatsappUrl("Olá! Gostaria de conversar sobre serviços contábeis.")} target="_blank" rel="noreferrer">
                   <img className="contact-brand-icon" src="/icons/whatsapp.svg" alt="" aria-hidden="true" width={22} height={22} /><span><small>WhatsApp</small>(41) 92002-6651</span>
