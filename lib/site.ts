@@ -6,6 +6,24 @@ export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_HANDLE}/`;
 export const SITE_URL = "https://gomesgalvaocontabilidade.com";
 export const SEARCH_INDEXING_ENABLED = true;
 
+export const OFFICE_ADDRESS = {
+  streetAddress: "Rua Napoleão Lopes, 80, complemento 05",
+  neighborhood: "São Francisco",
+  addressLocality: "Curitiba",
+  addressRegion: "PR",
+  postalCode: "80530-090",
+  addressCountry: "BR",
+};
+const officeMapDestination = [
+  OFFICE_ADDRESS.streetAddress,
+  OFFICE_ADDRESS.neighborhood,
+  `${OFFICE_ADDRESS.addressLocality} - ${OFFICE_ADDRESS.addressRegion}`,
+  OFFICE_ADDRESS.postalCode,
+  "Brasil",
+].join(", ");
+export const OFFICE_MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(officeMapDestination)}`;
+export const OFFICE_DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(officeMapDestination)}`;
+
 export function whatsappUrl(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
